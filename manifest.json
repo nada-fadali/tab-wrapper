@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tabs Wrapper",
+  "version": "0.0.1",
+  "description": "Wrap all open tabs in chrome into a single tab window",
+
+  "browser_action": {
+    "default_icon": "icon26red.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  // "content_scripts": [
+  //   {
+  //     "matches": ["<all_urls>"],
+  //     "js": ["content.js"]
+  //   }
+  // ],
+  
+  "permissions": ["<all_urls>", "tabs"]
+}
